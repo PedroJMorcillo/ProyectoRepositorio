@@ -20,12 +20,15 @@ public class ProyectoRepo {
         // TODO code application logic here
         String nombre, mensaje;
         Scanner teclado = new Scanner(System.in);
-        System.out.print("¿Cómo te llamas? ");
+        System.out.print("¿Cual es tu nombre? ");
         nombre = teclado.nextLine();
         System.out.print("Introduce un mensaje para empezar la práctica de repositorios:");
         mensaje = teclado.nextLine();
         System.out.println( nombre+ " te manda un mensaje: "+mensaje); 
-        System.out.println( nombre+ " FIN DE LA PRIMERA PARTE ");
+        
+       
+        CCuenta c1 = new CCuenta();
+        c1.ingresar(200);
     }
     
 }
